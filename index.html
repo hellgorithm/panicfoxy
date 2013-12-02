@@ -1,0 +1,44 @@
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0' name='viewport'>
+		
+<link rel='stylesheet' href='./style/style.css'/>
+<script src='./script/scale.js'></script>
+<script>
+	var game,gamesrc;
+	
+	window.onload= function(){
+		
+		gamecage = document.getElementById("gamecage");
+		game = document.getElementById("gamesrc");
+		setRes();
+	}
+	
+	window.onresize = function(){
+		setTimeout(function(){
+			setRes();
+		},1000);
+	}
+	
+	function setRes(){
+		
+		var winwidth = window.innerWidth / 2;
+		var winheight = window.innerHeight / 2;
+		myleft = winwidth - 160;
+		mytop = winheight - 240;
+		game.style.left = myleft + "px";
+		game.style.top = mytop + "px";
+		
+		
+		aspectRatio(gamecage,game);
+	}
+</script>
+<style>
+	body{
+		background:#424242;
+	}
+</style>
+</head>
+<div id='gamecage'  style='width:100%;height:100%;position:fixed;top:0px;left:0px;'>
+<iframe id='gamesrc' src='./app.html' width='320' height='480' style='position:fixed;'></iframe>
+</div>

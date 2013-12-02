@@ -1,0 +1,26 @@
+{
+  "fullscreen": "true", 
+  "name": "Panic Foxy : Learn While You Play",
+  "description": "Yeah, this is simple game for kids :-)",
+  "version":"0.1.1",
+  "launch_path": "/index.html",
+  "orientation": "portrait-primary", 
+  "icons": {
+    "128": "/img/icon_128.png",
+	"64": "/img/icon_64.png",
+	"32": "/img/icon_32.png"
+  },
+  "developer": {
+    "name": "Jim-Bert",
+    "url": "http://bonakid.github.io/"
+  },
+  "default_locale": "en",
+  "permissions": {
+	  "alarms": {
+		"description": "Required to schedule notifications"
+	  },
+	  "desktop-notification":{
+		"description" : "Required for timer notification"
+	  }
+	}
+}

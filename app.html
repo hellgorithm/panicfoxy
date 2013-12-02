@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content='width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0' name='viewport'>
+		<link rel="stylesheet" href='./style/style.css'/>
+		<style>
+			@font-face {
+					font-family: happyfont;
+					src: url('./style/defaultfont.ttf');
+			}
+			@font-face {
+					font-family: song;
+					src: url('./style/Pleasewritemeasong.ttf');
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id='loading'><img src='./img/welcome.png' id='logo'></div>
+		<!--<div id='game-direction'></div>-->
+		<div id='game-level'>
+			<div id='profile'>
+				<div class='direction'>Record to Beat</div>
+				<div id='profile-name'></div>
+				<div id='profile-score'></div>
+				<div id='profile-star'></div>
+			</div>
+			<div class='direction'>
+			Please choose a Letter
+			</div>
+			<div id='page1'>
+			<center>
+			<div class='letters' index='0'>Aa</div>
+			<div class='letters' index='1'>Bb</div>
+			<div class='letters' index='2'>Cc</div>
+			<div class='letters' index='3'>Dd</div>
+			<div class='letters' index='4'>Ee</div>
+			<div class='letters' index='5'>Ff</div>
+			<div class='letters' index='6'>Gg</div>
+			<div class='letters' index='7'>Hh</div>
+			<div class='letters' index='8'>Ii</div>
+			<div class='letters' index='9'>Jj</div>
+			<div class='letters' index='10'>Kk</div>
+			<div class='letters' index='11'>Ll</div>
+			<div class='letters' index='12'>Mm</div>
+			<div class='letters' index='13'>Nn</div>
+			<div class='letters' index='14'>Oo</div>
+			<div class='letters' index='15'>Pp</div>
+			</center>
+			</div>
+			<div id='page2'>
+			<center>
+			<div class='letters' index='16'>Qq</div>
+			<div class='letters' index='17'>Rr</div>
+			<div class='letters' index='18'>Ss</div>
+			<div class='letters' index='19'>Tt</div>
+			<div class='letters' index='20'>Uu</div>
+			<div class='letters' index='21'>Vv</div>
+			<div class='letters' index='22'>Ww</div>
+			<div class='letters' index='23'>Xx</div>
+			<div class='letters' index='24'>Yy</div>
+			<div class='letters' index='25'>Zz</div>
+			</center>
+			</div>
+			<div id='nav'><div id='nav1'>1</div><div id='nav2'>2</div><div id='nav3'><img src='./img/speaker.svg'></div></div>
+		</div>
+		<div id='game-proper'>
+			<div id='direction' class='direction'>
+			Tap anything that<br/>starts with letter
+			</div>
+			
+			<div id='whatletter'>
+			</div>
+			
+			<button id='start-button'>Tap here to Start</button>
+			<button id='return-button'>Return</button>
+			<div id='header-game'><span id='back'>Option</span><span id='myscore'>Score:<span id='scorecard'></span><span id='score'>0</span></span><br/>Time<div id='timer'><div id='timercol'></div></div></div>
+			<div id='word-play'></div>
+			<div id='foxsay'><center><img src='./img/no.gif'><div id='message'>The Fox said : <span id='foxsaid'></span></div></center></div>
+			<div id='get-name'><input type='text' id='myname'><input type='button' id='myreg' value="Confirm"><input type='button' id='noreg' value="Not Now"></div>
+		</div>
+		<script src='script/script.js'></script>
+	</body>
